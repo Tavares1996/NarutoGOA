@@ -1,0 +1,48 @@
+00:04:36	village_invite	Akimichi Sax	Konohagakure	Tanatoz
+00:05:33	village_invite	Akimichi Sax	Konohagakure	Zix
+00:06:27	village_kick	Akimichi Sax	Konohagakure	Zix
+00:07:36	village_invite	Raditz	Sunagakure	Zix
+00:25:33	change_rank	Akimichi Sax	Konohagakure	Uchiha J	Jounin
+00:27:02	host_chuunin	Akimichi Sax	Konohagakure
+00:27:59	host_chuunin	Akimichi Sax	Konohagakure
+00:29:20	host_chuunin	Akimichi Sax	Konohagakure
+15:29:35	send_to_arena	Raditz	Sunagakure	Silent Assassin
+15:29:37	send_to_arena	Raditz	Sunagakure	Raditz
+15:29:43	start_fight	Raditz	Sunagakure
+15:30:28	start_tournament	Raditz	Sunagakure
+15:34:30	end_fight	Raditz	Sunagakure
+15:40:19	send_to_arena	Raditz	Sunagakure	Poisin
+15:40:22	send_to_arena	Raditz	Sunagakure	Silent Assassin
+15:40:44	start_fight	Raditz	Sunagakure
+15:42:37	end_fight	Raditz	Sunagakure
+16:33:41	village_invite	Raditz	Sunagakure	XxKillerxX
+16:37:55	host_chuunin	Akimichi Sax	Konohagakure
+16:50:58	send_to_arena	Akimichi Sax	Konohagakure	Hyuuga SonsOfAnarchy
+16:51:05	start_fight	Akimichi Sax	Konohagakure
+16:51:13	end_fight	Akimichi Sax	Konohagakure
+17:20:55	change_rank	Uchiha -E-	Kirigakure	Bloodtaster	Elite Jounin
+17:21:58	village_invite	Bloodtaster	Kirigakure	Zix
+17:22:52	village_invite	Bloodtaster	Kirigakure	Hyuuga Draper
+17:23:33	village_kick	Bloodtaster	Kirigakure	Hyuuga Draper
+18:00:10	change_rank	Bloodtaster	Kirigakure	Zix	Jounin
+18:07:12	change_rank	Bloodtaster	Kirigakure	Zix	Chuunin
+18:07:54	change_rank	Bloodtaster	Kirigakure	Zix	Elite Jounin
+18:41:44	mute	Raditz	Sunagakure	Silent Assassin
+18:41:57	unmute	Raditz	Sunagakure	Silent Assassin
+18:43:16	send_to_arena	Raditz	Sunagakure	Raditz
+18:43:46	end_fight	Raditz	Sunagakure
+18:46:44	mute	Bloodtaster	Kirigakure	Zix
+18:47:03	unmute_all	Bloodtaster	Kirigakure
+18:54:05	mute	Raditz	Sunagakure	Capacity Ninja
+18:54:07	mute	Raditz	Sunagakure	Raditz
+18:54:09	mute	Raditz	Sunagakure	The Gynecologist
+18:54:10	mute	Raditz	Sunagakure	Ikon Skittz
+18:54:13	mute	Raditz	Sunagakure	Silent Assassin
+18:54:23	unmute_all	Raditz	Sunagakure
+18:55:22	send_to_arena	Bloodtaster	Kirigakure	Bloodtaster
+18:55:25	start_fight	Bloodtaster	Kirigakure
+18:55:31	end_fight	Bloodtaster	Kirigakure
+18:59:11	send_to_arena	Bloodtaster	Kirigakure	Steel Shredz
+18:59:17	send_to_arena	Bloodtaster	Kirigakure	Bloodtaster
+18:59:25	start_fight	Bloodtaster	Kirigakure
+18:59:30	end_fight	Bloodtaster	Kirigakure

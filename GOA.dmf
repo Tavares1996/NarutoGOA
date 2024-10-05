@@ -1,0 +1,1930 @@
+macro "macro"
+	elem 
+		name = "CENTER+REP"
+		command = ".center"
+	elem "chat"
+		name = "RETURN"
+		command = "macchat"
+	elem "interact"
+		name = "SPACE"
+		command = "macinteract"
+	elem 
+		name = "NORTHEAST+REP"
+		command = ".northeast"
+	elem 
+		name = "SOUTHEAST+REP"
+		command = ".southeast"
+	elem 
+		name = "SOUTHWEST+REP"
+		command = ".southwest"
+	elem 
+		name = "NORTHWEST+REP"
+		command = ".northwest"
+	elem 
+		name = "WEST+REP"
+		command = ".west"
+	elem 
+		name = "NORTH+REP"
+		command = ".north"
+	elem 
+		name = "EAST+REP"
+		command = ".east"
+	elem 
+		name = "SOUTH+REP"
+		command = ".south"
+	elem "use-skill-10"
+		name = "0"
+		command = "mac0"
+	elem "use-skill-1"
+		name = "1"
+		command = "mac1"
+	elem "use-skill-2"
+		name = "2"
+		command = "mac2"
+	elem "use-skill-3"
+		name = "3"
+		command = "mac3"
+	elem "use-skill-4"
+		name = "4"
+		command = "mac4"
+	elem "use-skill-5"
+		name = "5"
+		command = "mac5"
+	elem "use-skill-6"
+		name = "6"
+		command = "mac6"
+	elem "use-skill-7"
+		name = "7"
+		command = "mac7"
+	elem "use-skill-8"
+		name = "8"
+		command = "mac8"
+	elem "target-plus-prev"
+		name = "SHIFT+["
+		command = "mactarget-plus-prev"
+	elem "target-prev"
+		name = "[+REP"
+		command = "mactarget-prev"
+	elem "use-skill-9"
+		name = "9"
+		command = "mac9"
+	elem "target-plus-next"
+		name = "SHIFT+]"
+		command = "mactarget-plus-next"
+	elem "target-next"
+		name = "]+REP"
+		command = "mactarget-next"
+	elem "attack"
+		name = "A+REP"
+		command = "macattack"
+	elem "defend"
+		name = "D+REP"
+		command = "macdefend"
+	elem "use"
+		name = "F+REP"
+		command = "macuse"
+	elem "untarget"
+		name = "U"
+		command = "macuntarget"
+	elem "trigger"
+		name = "Z+REP"
+		command = "mactrigger"
+
+
+menu "menu"
+	elem "menu_character"
+		name = "&Character"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Combat Info"
+		command = ".winset \"right_top_child.left=combat_output_pane\""
+		category = "&Character"
+		is-checked = true
+		can-check = true
+		group = "right_top_switch"
+		saved-params = "is-checked"
+	elem 
+		name = "&Skill List"
+		command = ".winset \"right_top_child.left=skills_pane\""
+		category = "&Character"
+		can-check = true
+		group = "right_top_switch"
+		saved-params = "is-checked"
+	elem 
+		name = "&Detailed Stats"
+		command = ".winset \"right_top_child.left=full_stats_pane\""
+		category = "&Character"
+		can-check = true
+		group = "right_top_switch"
+		saved-params = "is-checked"
+	elem "squad_members_menu_item"
+		name = "Squad &Members"
+		command = ".winset \"right_top_child.left=squad_list_pane\""
+		category = "&Character"
+		can-check = true
+		group = "right_top_switch"
+		is-disabled = true
+		saved-params = "is-checked"
+	elem 
+		name = "&Bounty List"
+		command = ".winset \"right_top_child.left=bounty_list_pane\""
+		category = "&Character"
+		can-check = true
+		group = "right_top_switch"
+		saved-params = "is-checked"
+	elem 
+		name = ""
+		command = ""
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Logout"
+		command = ".quit"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem "menu_commands"
+		name = "C&ommands"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "View &Map"
+		command = "Check-Map"
+		category = "C&ommands"
+		saved-params = "is-checked"
+	elem 
+		name = "View &Skill Tree"
+		command = "check-skill-tree"
+		category = "C&ommands"
+		saved-params = "is-checked"
+	elem 
+		name = "View &Report Card"
+		command = "Check-Ninja-Report-Card"
+		category = "C&ommands"
+		saved-params = "is-checked"
+	elem 
+		name = "View &Online People"
+		command = "Who"
+		category = "C&ommands"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Mute"
+		command = "vote-mute"
+		category = "C&ommands"
+		saved-params = "is-checked"
+	elem 
+		name = "&Whisper..."
+		command = "whisper"
+		category = "C&ommands"
+		saved-params = "is-checked"
+	elem 
+		name = ""
+		command = ""
+		category = "C&ommands"
+		saved-params = "is-checked"
+	elem 
+		name = "&Options..."
+		command = "show-options"
+		category = "C&ommands"
+		saved-params = "is-checked"
+	elem 
+		name = "OOC"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "Toggle OOC"
+		command = "OOC"
+		category = "OOC"
+		saved-params = "is-checked"
+	elem 
+		name = "Updates/Info"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "Update"
+		command = "ShowUpdates1"
+		category = "Updates/Info"
+		saved-params = "is-checked"
+	elem 
+		name = "Suggestions"
+		command = "Suggestion"
+		category = "Updates/Info"
+		saved-params = "is-checked"
+
+
+window "bounty_list_pane"
+	elem "bounty_list_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "bounty_list_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x250
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #4e2b07
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		is-list = true
+	elem "full_stats_grid_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = 0,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tl.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 368x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_t.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_tr"
+		type = LABEL
+		pos = 373,2
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tr.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_r"
+		type = LABEL
+		pos = 373,5
+		size = 3x250
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_r.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_br"
+		type = LABEL
+		pos = 373,255
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_br.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_b"
+		type = LABEL
+		pos = 5,255
+		size = 368x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_b.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_bl"
+		type = LABEL
+		pos = 2,255
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_bl.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x250
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_l.png'
+		image-mode = stretch
+
+window "browser-popup"
+	elem "browser-popup"
+		type = MAIN
+		pos = 219,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-maximized"
+		title = "Browser"
+		statusbar = false
+	elem "browser1"
+		type = BROWSER
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 100,100
+		saved-params = ""
+		auto-format = false
+
+window "chatadmin"
+	elem "chatadmin"
+		type = MAIN
+		pos = 281,0
+		size = 300x400
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		is-visible = false
+		saved-params = "pos;size;is-maximized"
+		title = "ADM CHAT"
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+	elem "adm_say"
+		type = OUTPUT
+		pos = 5,5
+		size = 290x365
+		anchor1 = none
+		anchor2 = none
+		background-color = #959595
+		border = sunken
+		saved-params = "max-lines"
+	elem "input16"
+		type = INPUT
+		pos = 5,375
+		size = 290x20
+		anchor1 = none
+		anchor2 = none
+		background-color = #919191
+		saved-params = ""
+		command = "Say-adm"
+
+window "combat_output_pane"
+	elem "combat_output_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "combat_output"
+		type = OUTPUT
+		pos = 5,5
+		size = 368x250
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaf4ff
+		background-color = #4e2b07
+		saved-params = "max-lines"
+	elem "combat_output_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = 0,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tl.png'
+		image-mode = stretch
+	elem "combat_output_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 368x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_t.png'
+		image-mode = stretch
+	elem "combat_output_border_tr"
+		type = LABEL
+		pos = 373,2
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tr.png'
+		image-mode = stretch
+	elem "combat_output_border_r"
+		type = LABEL
+		pos = 373,5
+		size = 3x250
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_r.png'
+		image-mode = stretch
+	elem "combat_output_border_br"
+		type = LABEL
+		pos = 373,255
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_br.png'
+		image-mode = stretch
+	elem "combat_output_border_b"
+		type = LABEL
+		pos = 5,255
+		size = 368x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_b.png'
+		image-mode = stretch
+	elem "combat_output_border_bl"
+		type = LABEL
+		pos = 2,255
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_bl.png'
+		image-mode = stretch
+	elem "combat_output_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x250
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_l.png'
+		image-mode = stretch
+
+window "default_left_pane"
+	elem "default_left_pane"
+		type = MAIN
+		pos = 281,0
+		size = 554x699
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "left_top_child"
+		type = CHILD
+		pos = 0,0
+		size = 554x554
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		left = "map_pane"
+		is-vert = false
+	elem "left_bottom_child"
+		type = CHILD
+		pos = 0,554
+		size = 554x145
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		left = "stats_pane"
+		is-vert = false
+
+window "default_right_pane"
+	elem "default_right_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x699
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "right_top_child"
+		type = CHILD
+		pos = 0,0
+		size = 378x260
+		anchor1 = 0,0
+		anchor2 = 100,37
+		saved-params = "left"
+		left = "combat_output_pane"
+		is-vert = false
+	elem "right_bottom_child"
+		type = CHILD
+		pos = 0,260
+		size = 378x384
+		anchor1 = 0,37
+		anchor2 = 100,100
+		saved-params = ""
+		left = "ooc_output_pane"
+		is-vert = false
+	elem "default_input"
+		type = INPUT
+		pos = 5,674
+		size = 368x20
+		anchor1 = 0,100
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #75400b
+		is-default = true
+		saved-params = "command"
+		command = "Say \""
+	elem "default_input_border_tl"
+		type = LABEL
+		pos = 2,671
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_tl.png'
+		image-mode = stretch
+	elem "default_input_border_t"
+		type = LABEL
+		pos = 5,671
+		size = 368x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_t.png'
+		image-mode = stretch
+	elem "default_input_border_tr"
+		type = LABEL
+		pos = 373,671
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_tr.png'
+		image-mode = stretch
+	elem "default_input_border_r"
+		type = LABEL
+		pos = 373,674
+		size = 3x20
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_r.png'
+		image-mode = stretch
+	elem "default_input_border_br"
+		type = LABEL
+		pos = 373,694
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_br.png'
+		image-mode = stretch
+	elem "default_input_border_b"
+		type = LABEL
+		pos = 5,694
+		size = 368x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_b.png'
+		image-mode = stretch
+	elem "default_input_border_bl"
+		type = LABEL
+		pos = 2,694
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_bl.png'
+		image-mode = stretch
+	elem "default_input_border_l"
+		type = LABEL
+		pos = 2,674
+		size = 3x20
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_l.png'
+		image-mode = stretch
+	elem "nooc_button"
+		type = BUTTON
+		pos = 196,648
+		size = 60x20
+		anchor1 = 0,100
+		anchor2 = none
+		is-visible = false
+		saved-params = "is-checked"
+		text = "OOC"
+		command = ".winset \"default_input.command=NOOC\""
+		is-flat = true
+		group = "chat_commands"
+		button-type = pushbox
+	elem "say_button"
+		type = BUTTON
+		pos = 4,648
+		size = 60x20
+		anchor1 = 0,100
+		anchor2 = none
+		is-default = true
+		saved-params = "is-checked"
+		text = "Say"
+		command = ".winset \"default_input.command=Say\""
+		is-flat = true
+		is-checked = true
+		group = "chat_commands"
+		button-type = pushbox
+	elem "vsay_button"
+		type = BUTTON
+		pos = 68,648
+		size = 60x20
+		anchor1 = 0,100
+		anchor2 = none
+		is-visible = false
+		is-default = true
+		saved-params = "is-checked"
+		text = "Village Say"
+		command = ".winset \"default_input.command=Village-Say\""
+		is-flat = true
+		group = "chat_commands"
+		button-type = pushbox
+	elem "fsay_button"
+		type = BUTTON
+		pos = 133,648
+		size = 59x20
+		anchor1 = 0,100
+		anchor2 = none
+		is-visible = false
+		saved-params = "is-checked"
+		text = "Faction Say"
+		command = ".winset \"default_input.command=Faction-Say"
+		is-flat = true
+		group = "chat_commands"
+		button-type = pushbox
+
+window "full_stats_pane"
+	elem "full_stats_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "full_stats_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x250
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #4e2b07
+		saved-params = ""
+		cells = 2x1
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+	elem "full_stats_grid_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = 0,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tl.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 368x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_t.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_tr"
+		type = LABEL
+		pos = 373,2
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tr.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_r"
+		type = LABEL
+		pos = 373,5
+		size = 3x250
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_r.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_br"
+		type = LABEL
+		pos = 373,255
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_br.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_b"
+		type = LABEL
+		pos = 5,255
+		size = 368x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_b.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_bl"
+		type = LABEL
+		pos = 2,255
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_bl.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x250
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_l.png'
+		image-mode = stretch
+
+window "main"
+	elem "main"
+		type = MAIN
+		pos = 281,0
+		size = 932x699
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		is-default = true
+		saved-params = "pos;size;is-maximized"
+		title = "Naruto GOA"
+		statusbar = false
+		macro = "macro"
+		menu = "menu"
+	elem "left_side_child"
+		type = CHILD
+		pos = 0,0
+		size = 554x699
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = "splitter"
+		left = "default_left_pane"
+		is-vert = false
+	elem "right_side_child"
+		type = CHILD
+		pos = 554,0
+		size = 378x699
+		anchor1 = 0,0
+		anchor2 = 100,100
+		saved-params = "splitter"
+		left = "default_right_pane"
+		is-vert = false
+
+window "map_pane"
+	elem "map_pane"
+		type = MAIN
+		pos = 281,0
+		size = 554x554
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "map"
+		type = MAP
+		pos = 5,5
+		size = 544x544
+		anchor1 = none
+		anchor2 = none
+		text-color = #000000
+		is-default = true
+		saved-params = "icon-size"
+	elem "map_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = 0,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_tl.png'
+		image-mode = stretch
+	elem "map_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 544x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_t.png'
+		image-mode = stretch
+	elem "map_border_tr"
+		type = LABEL
+		pos = 549,2
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_tr.png'
+		image-mode = stretch
+	elem "map_border_r"
+		type = LABEL
+		pos = 549,5
+		size = 3x544
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_r.png'
+		image-mode = stretch
+	elem "map_border_br"
+		type = LABEL
+		pos = 549,549
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_br.png'
+		image-mode = stretch
+	elem "map_border_b"
+		type = LABEL
+		pos = 5,549
+		size = 544x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_b.png'
+		image-mode = stretch
+	elem "map_border_bl"
+		type = LABEL
+		pos = 2,549
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_bl.png'
+		image-mode = stretch
+	elem "map_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x544
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/map_border_l.png'
+		image-mode = stretch
+
+window "ooc_output_pane"
+	elem "ooc_output_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x384
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "ooc_output"
+		type = OUTPUT
+		pos = 6,5
+		size = 368x374
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Cambria,Times New Roman,serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #5e2c0d
+		is-default = true
+		saved-params = "max-lines"
+		style = ".villageicon img.icon { width: 18; height: 14; }\na.admin_link:link { text-decoration: none; color: #ffffff; }\na.admin_link:visited { text-decoration: none; color: #ffffff; }\n.name { font-weight: bold; }\n.help .rank { color: #55acda; }\n.help .message { color: #448cca; }\n.help .interserver .name { font-style: italic; }\n.village_chat .faction, .village_chat .rank, .village_chat .name { color: #e4ca1f; }\n.village_chat .message { color: #29b41c; }\n.village_chat .interserver .faction { font-style: italic; }\n.village_chat .Konoha .faction, .village_chat .Konoha .rank { color: #40A000; }\n.village_chat .Konoha .name { color: #60C000; }\n.village_chat .Konoha .message { color: #FF6000; }\n.village_chat .Kiri .faction, .village_chat .Kiri .rank { color: #0080FF; }\n.village_chat .Kiri .name { color: #20A0FF; }\n.village_chat .Kiri .message { color: #8080FF; }\n.village_chat .Suna .faction, .village_chat .Suna .rank { color: #B0B080; }\n.village_chat .Suna .name { color: #D0D0A0; }\n.village_chat .Suna .message { color: #FFFF80; }\n.faction_chat .faction, .faction_chat .rank, .faction_chat .name { color: #e4ca1f; }\n.faction_chat .message { color: #29b41c; }\n.faction_chat .interserver .faction { font-style: italic; }\n.radio .chat_type, .radio .message { color: #8cbd73; }\n.radio .interserver .name { font-style: italic; }\n.say .chat_type, .say .message { color: #a6e6fc; }\n.mute_notify .interserver { font-style: italic;}\n.chuunin_exam { color: #448cca; font-weight: bold; }\n.war_info, .territory_info { color: #00b84d; font-weight: bold; }\n.death_info .betrayal { text-decoration: underline; font-style: italic; }"
+	elem "ooc_output_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = 0,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tl.png'
+		image-mode = stretch
+	elem "ooc_output_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 368x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_t.png'
+		image-mode = stretch
+	elem "ooc_output_border_tr"
+		type = LABEL
+		pos = 373,2
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tr.png'
+		image-mode = stretch
+	elem "ooc_output_border_r"
+		type = LABEL
+		pos = 373,5
+		size = 3x374
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_r.png'
+		image-mode = stretch
+	elem "ooc_output_border_br"
+		type = LABEL
+		pos = 373,379
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_br.png'
+		image-mode = stretch
+	elem "ooc_output_border_b"
+		type = LABEL
+		pos = 5,379
+		size = 368x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_b.png'
+		image-mode = stretch
+	elem "ooc_output_border_bl"
+		type = LABEL
+		pos = 2,379
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_bl.png'
+		image-mode = stretch
+	elem "ooc_output_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x374
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_l.png'
+		image-mode = stretch
+
+window "options"
+	elem "options"
+		type = MAIN
+		pos = 281,0
+		size = 500x400
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-maximized"
+		title = "Options"
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+	elem "options_tab"
+		type = TAB
+		pos = 0,0
+		size = 500x400
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		tabs = "options_macro_pane"
+		current-tab = "options_macro_pane"
+
+window "options_macro_pane"
+	elem "options_macro_pane"
+		type = MAIN
+		pos = 219,0
+		size = 500x400
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		title = "Macros"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "button1"
+		type = BUTTON
+		pos = 437,375
+		size = 60x20
+		anchor1 = 100,100
+		anchor2 = none
+		saved-params = "is-checked"
+		text = "Close"
+		command = "close-options"
+	elem "label20"
+		type = LABEL
+		pos = 210,110
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Cycle Next Target: "
+		align = right
+	elem "next_target_input"
+		type = INPUT
+		pos = 310,110
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"target-next\" \""
+	elem "label19"
+		type = LABEL
+		pos = 210,131
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Cycle Prev. Target: "
+		align = right
+	elem "prev_target_input"
+		type = INPUT
+		pos = 310,131
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"target-prev\" \""
+	elem "label18"
+		type = LABEL
+		pos = 210,151
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Add Next Target: "
+		align = right
+	elem "add_next_target_input"
+		type = INPUT
+		pos = 310,151
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"target-plus-next\" \""
+	elem "label14"
+		type = LABEL
+		pos = 210,172
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Add Prev. Target: "
+		align = right
+	elem "add_prev_target_input"
+		type = INPUT
+		pos = 310,172
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"untarget\" \""
+	elem "label1"
+		type = LABEL
+		pos = 5,5
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 1: "
+		align = right
+	elem "skill1_input"
+		type = INPUT
+		pos = 105,5
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-1\" \""
+	elem "label2"
+		type = LABEL
+		pos = 5,26
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 2: "
+		align = right
+	elem "skill2_input"
+		type = INPUT
+		pos = 105,26
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-2\" \""
+	elem "label3"
+		type = LABEL
+		pos = 5,47
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 3: "
+		align = right
+	elem "skill3_input"
+		type = INPUT
+		pos = 105,47
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-3\" \""
+	elem "label4"
+		type = LABEL
+		pos = 5,68
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 4: "
+		align = right
+	elem "skill4_input"
+		type = INPUT
+		pos = 105,68
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-4\" \""
+	elem "label5"
+		type = LABEL
+		pos = 5,89
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 5: "
+		align = right
+	elem "skill5_input"
+		type = INPUT
+		pos = 105,89
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-5\" \""
+	elem "label6"
+		type = LABEL
+		pos = 5,110
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 6: "
+		align = right
+	elem "skill6_input"
+		type = INPUT
+		pos = 105,110
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		is-default = true
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-6\" \""
+	elem "label7"
+		type = LABEL
+		pos = 5,131
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 7: "
+		align = right
+	elem "skill7_input"
+		type = INPUT
+		pos = 105,131
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-7\" \""
+	elem "label8"
+		type = LABEL
+		pos = 5,152
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 8: "
+		align = right
+	elem "skill8_input"
+		type = INPUT
+		pos = 105,152
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-8\" \""
+	elem "label9"
+		type = LABEL
+		pos = 5,173
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 9: "
+		align = right
+	elem "skill9_input"
+		type = INPUT
+		pos = 105,173
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-9\" \""
+	elem "label10"
+		type = LABEL
+		pos = 5,194
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 0: "
+		align = right
+	elem "skill10_input"
+		type = INPUT
+		pos = 105,194
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-10\" \""
+	elem "label11"
+		type = LABEL
+		pos = 210,5
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Attack: "
+		align = right
+	elem "attack_input"
+		type = INPUT
+		pos = 310,5
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"attack\" \""
+	elem "label12"
+		type = LABEL
+		pos = 210,26
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Defend: "
+		align = right
+	elem "defend_input"
+		type = INPUT
+		pos = 310,26
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"defend\" \""
+	elem "label13"
+		type = LABEL
+		pos = 210,47
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Weapon: "
+		align = right
+	elem "use_weapon_input"
+		type = INPUT
+		pos = 310,47
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use\" \""
+	elem "label15"
+		type = LABEL
+		pos = 209,68
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Trigger Skill: "
+		align = right
+	elem "trigger_input"
+		type = INPUT
+		pos = 310,68
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"trigger\" \""
+	elem "label16"
+		type = LABEL
+		pos = 210,193
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Untarget: "
+		align = right
+	elem "untarget_input"
+		type = INPUT
+		pos = 310,193
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"untarget\" \""
+	elem "label17"
+		type = LABEL
+		pos = 210,89
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Interact: "
+		align = right
+	elem "interact_input"
+		type = INPUT
+		pos = 310,89
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"interact\" \""
+
+window "skills_pane"
+	elem "skills_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "skills_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x250
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #4e2b07
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		is-list = true
+	elem "skills_grid_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = 0,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tl.png'
+		image-mode = stretch
+	elem "skills_grid_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 368x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_t.png'
+		image-mode = stretch
+	elem "skills_grid_border_tr"
+		type = LABEL
+		pos = 373,2
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tr.png'
+		image-mode = stretch
+	elem "skills_grid_border_r"
+		type = LABEL
+		pos = 373,5
+		size = 3x250
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_r.png'
+		image-mode = stretch
+	elem "skills_grid_border_br"
+		type = LABEL
+		pos = 373,255
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_br.png'
+		image-mode = stretch
+	elem "skills_grid_border_b"
+		type = LABEL
+		pos = 5,255
+		size = 368x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_b.png'
+		image-mode = stretch
+	elem "skills_grid_border_bl"
+		type = LABEL
+		pos = 2,255
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_bl.png'
+		image-mode = stretch
+	elem "skills_grid_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x250
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_l.png'
+		image-mode = stretch
+
+window "squad_list_pane"
+	elem "squad_list_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "squad_list_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x250
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #4e2b07
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		is-list = true
+	elem "full_stats_grid_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = 0,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tl.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 368x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_t.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_tr"
+		type = LABEL
+		pos = 373,2
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tr.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_r"
+		type = LABEL
+		pos = 373,5
+		size = 3x250
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_r.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_br"
+		type = LABEL
+		pos = 373,255
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_br.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_b"
+		type = LABEL
+		pos = 5,255
+		size = 368x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_b.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_bl"
+		type = LABEL
+		pos = 2,255
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_bl.png'
+		image-mode = stretch
+	elem "full_stats_grid_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x250
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_l.png'
+		image-mode = stretch
+
+window "stats_pane"
+	elem "stats_pane"
+		type = MAIN
+		pos = 281,0
+		size = 554x145
+		anchor1 = none
+		anchor2 = none
+		background-color = #c26a12
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "stats_grid"
+		type = GRID
+		pos = 5,5
+		size = 544x40
+		anchor1 = 0,0
+		anchor2 = none
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 8
+		text-color = #f4eaff
+		background-color = #3c2704
+		right-click = true
+		saved-params = ""
+		cells = 1x2
+		current-cell = 1,1
+		show-lines = none
+		style = "margin-left: 0px;\n\nmargin-right: 0px;"
+	elem "stats_grid_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tl.png'
+		image-mode = stretch
+	elem "stats_grid_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 544x3
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_t.png'
+		image-mode = stretch
+	elem "stats_grid_border_tr"
+		type = LABEL
+		pos = 549,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tr.png'
+		image-mode = stretch
+	elem "stats_grid_border_r"
+		type = LABEL
+		pos = 549,5
+		size = 3x40
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_r.png'
+		image-mode = stretch
+	elem "stats_grid_border_br"
+		type = LABEL
+		pos = 549,45
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_br.png'
+		image-mode = stretch
+	elem "stats_grid_border_b"
+		type = LABEL
+		pos = 5,45
+		size = 544x3
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_b.png'
+		image-mode = stretch
+	elem "stats_grid_border_bl"
+		type = LABEL
+		pos = 2,45
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_bl.png'
+		image-mode = stretch
+	elem "stats_grid_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x40
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_l.png'
+		image-mode = stretch
+	elem "inventory_grid"
+		type = GRID
+		pos = 5,55
+		size = 544x85
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 8
+		text-color = #eaeaff
+		background-color = #4e2b07
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		is-list = true
+	elem "inventory_grid_border_tl"
+		type = LABEL
+		pos = 2,52
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tl.png'
+		image-mode = stretch
+	elem "inventory_grid_border_t"
+		type = LABEL
+		pos = 5,52
+		size = 544x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_t.png'
+		image-mode = stretch
+	elem "inventory_grid_border_tr"
+		type = LABEL
+		pos = 549,52
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_tr.png'
+		image-mode = stretch
+	elem "inventory_grid_border_r"
+		type = LABEL
+		pos = 549,55
+		size = 3x85
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_r.png'
+		image-mode = stretch
+	elem "inventory_grid_border_br"
+		type = LABEL
+		pos = 549,140
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_br.png'
+		image-mode = stretch
+	elem "inventory_grid_border_b"
+		type = LABEL
+		pos = 5,140
+		size = 544x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_b.png'
+		image-mode = stretch
+	elem "inventory_grid_border_bl"
+		type = LABEL
+		pos = 2,140
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = none
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_bl.png'
+		image-mode = stretch
+	elem "inventory_grid_border_l"
+		type = LABEL
+		pos = 2,55
+		size = 3x85
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image = 'skin images/border_l.png'
+		image-mode = stretch
+
+window "whisper_popup"
+	elem "whisper_popup"
+		type = MAIN
+		pos = 281,0
+		size = 300x400
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		is-visible = false
+		saved-params = "pos;size;is-maximized"
+		title = "Whisper"
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+	elem "whisper_chat_output"
+		type = OUTPUT
+		pos = 5,5
+		size = 290x365
+		anchor1 = none
+		anchor2 = none
+		saved-params = "max-lines"
+	elem "whisper_chat_input"
+		type = INPUT
+		pos = 5,375
+		size = 290x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		command = "Whisper"
+

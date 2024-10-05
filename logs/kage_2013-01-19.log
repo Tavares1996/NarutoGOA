@@ -1,0 +1,70 @@
+00:02:35	village_invite	Raditz	Sunagakure	Zix
+00:51:23	host_chuunin	Raditz	Sunagakure
+01:39:45	send_to_arena	Raditz	Sunagakure	Zix
+01:53:34	send_to_arena	Raditz	Sunagakure	Gaara OfTheSand
+01:53:43	send_to_arena	Raditz	Sunagakure	MikeyReborn
+01:53:49	start_fight	Raditz	Sunagakure
+01:58:49	send_to_arena	Raditz	Sunagakure	Gaara OfTheSand
+01:58:55	send_to_arena	Raditz	Sunagakure	Silent Assassin
+01:59:05	start_tournament	Raditz	Sunagakure
+01:59:11	start_fight	Raditz	Sunagakure
+02:01:09	end_tournament	Raditz	Sunagakure
+02:01:18	end_fight	Raditz	Sunagakure
+02:01:27	start_fight	Raditz	Sunagakure
+02:02:40	start_tournament	Raditz	Sunagakure
+02:27:58	change_rank	Raditz	Sunagakure	Zix	Special Jounin
+02:28:07	change_rank	Raditz	Sunagakure	Zix	Chuunin
+12:05:09	village_invite	Raditz	Sunagakure	Maito Guy
+12:18:52	add_helper	Raditz	Sunagakure	Raditz
+12:20:34	end_fight	Raditz	Sunagakure
+12:20:48	add_helper	Raditz	Sunagakure	Raditz
+12:29:20	mute	Raditz	Sunagakure	Yamato
+12:29:25	unmute	Raditz	Sunagakure	Yamato
+12:38:16	send_to_arena	Raditz	Sunagakure	Raditz
+12:38:27	start_fight	Raditz	Sunagakure
+12:38:34	end_fight	Raditz	Sunagakure
+12:49:49	change_rank	Raditz	Sunagakure	Maito Guy	Elite Jounin
+12:50:04	change_rank	Raditz	Sunagakure	Maito Guy	Chuunin
+12:52:08	unmute_all	Raditz	Sunagakure
+14:02:25	add_helper	Raditz	Sunagakure	Silent Assassin
+14:08:22	village_invite	Raditz	Sunagakure	Ruthless J
+16:28:55	village_invite	Raditz	Sunagakure	Zix
+16:29:00	village_kick	Raditz	Sunagakure	Zix
+16:48:49	village_invite	Raditz	Sunagakure	Zix
+16:50:03	village_invite	Raditz	Sunagakure	Zix
+17:15:31	village_invite	Raditz	Sunagakure	Zix
+17:15:39	send_to_arena	Raditz	Sunagakure	Zix
+17:15:44	mute	Raditz	Sunagakure	Zix
+17:15:49	village_kick	Raditz	Sunagakure	Zix
+17:18:29	end_fight	Ruthless, Shikyo's Corpse	Sunagakure
+18:18:42	village_invite	Raditz	Sunagakure	Ruthless, Shikyo
+18:19:12	send_to_arena	Raditz	Sunagakure	Silent Assassin
+18:19:22	send_to_arena	Raditz	Sunagakure	Ruthless, Shikyo
+18:20:12	end_fight	Raditz	Sunagakure
+18:21:48	send_to_arena	Raditz	Sunagakure	Ruthless, Shikyo
+18:21:59	send_to_arena	Raditz	Sunagakure	Silent Assassin
+18:22:17	start_fight	Raditz	Sunagakure
+18:38:19	mute	Raditz	Sunagakure	Raditz
+18:38:25	unmute	Raditz	Sunagakure	Raditz
+20:19:29	send_to_arena	Raditz	Sunagakure	Ruthless, Shikyo
+20:19:33	send_to_arena	Raditz	Sunagakure	Shine Sannin
+20:19:42	send_to_arena	Raditz	Sunagakure	Silent Assassin
+20:19:49	send_to_arena	Raditz	Sunagakure	Raditz
+20:20:27	start_fight	Raditz	Sunagakure
+20:27:26	end_fight	Raditz	Sunagakure
+20:28:44	send_to_arena	Raditz	Sunagakure	Shine Sannin
+20:28:46	send_to_arena	Raditz	Sunagakure	Ruthless, Shikyo
+20:28:51	start_fight	Raditz	Sunagakure
+20:34:22	end_fight	Raditz	Sunagakure
+20:35:34	send_to_arena	Raditz	Sunagakure	Ruthless, Shikyo
+20:35:36	send_to_arena	Raditz	Sunagakure	Ruthless J
+20:35:44	start_fight	Raditz	Sunagakure
+20:39:15	end_fight	Raditz	Sunagakure
+21:12:17	add_helper	Raditz	Sunagakure	Silent Assassin
+21:58:44	village_invite	Raditz	Sunagakure	Zix
+22:01:00	mute	Raditz	Sunagakure	Silent Assassin
+22:01:11	unmute	Raditz	Sunagakure	Silent Assassin
+22:13:58	end_fight	Raditz	Sunagakure
+22:14:30	add_helper	Raditz	Sunagakure	Zix
+22:15:21	unmute_all	Raditz	Sunagakure
+23:42:22	create_faction	Akimichi Sax	Konohagakure	Gay Exte	Uchiha -E-	1

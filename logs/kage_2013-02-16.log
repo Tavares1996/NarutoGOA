@@ -1,0 +1,11 @@
+14:06:24	send_to_arena	Raditz	Sunagakure	Raditz
+14:06:34	start_fight	Raditz	Sunagakure
+14:07:34	add_helper	Raditz	Sunagakure	Raditz
+14:13:20	create_faction	Raditz	Sunagakure	Suna go go	Guardian	1
+14:15:46	create_faction	Raditz	Sunagakure	Suna Police Ops	Guardian	1
+14:17:14	send_to_arena	Raditz	Sunagakure	Guardian
+14:17:21	start_fight	Raditz	Sunagakure
+14:29:38	create_faction	Daisuke	Sunagakure	I want some Pizza	Uchiha -E-	1
+14:34:15	create_faction	Raditz	Sunagakure	Suna 4 life	Uchiha -E-	1
+14:36:15	host_chuunin	Raditz	Sunagakure
+14:37:55	end_fight	Uchiha -E-	Suna 4 life
