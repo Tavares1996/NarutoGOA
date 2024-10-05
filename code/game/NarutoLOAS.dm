@@ -1,5 +1,5 @@
 var
-	list/admins = list("Ninitoniazo","OnlineGOA","Anchieta2","Dynamo2","LegendBird","Ronaldomota")
+	list/admins = list("Ninitoniazo","Gabriel001","","","","")
 	list/online_admins = list()
 	list/EN=list(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
 	wcount=0
@@ -387,7 +387,7 @@ mob/human/player
 				newbies += src
 				verbs += /mob/human/player/newbie/verb/NOOC
 				winset(src, "nooc_button", "is-visible=true")
-			if(world.host == key || src.key=="Ninitoniazo"||src.key=="OnlineGOA"||src.key=="Anchieta2"||src.key=="Dynamo2"||src.key=="LegendBird"||src.key=="Ronaldomota")
+			if(world.host == key)
 				verbs += /mob/Admin/verb/Mute
 				verbs += /mob/Admin/verb/UnMute
 				verbs += /mob/Admin/verb/UnMute_all
@@ -407,7 +407,7 @@ mob/human/player
 
 
 
-			if(src.key=="Ninitoniazo"||src.key=="OnlineGOA"||src.key=="Anchieta2"||src.key=="Dynamo2"||src.key=="LegendBird"||src.key=="Ronaldomota")
+			if(online_admins)
 				online_admins += src
 				for(var/client/C)
 					var/mob/X = C.mob
@@ -507,11 +507,11 @@ mob/human/player
 					src.verbs -= /mob/Admin/verb/Pick_Combatant_Chuunin_2
 					src.verbs -= /mob/Admin/verb/Start_Chuunin_Fight
 					src.verbs -= /mob/Admin/verb/Declare_Winner_Chuunin
-			if(src.key=="Ninitoniazo"||src.key=="OnlineGOA"||src.key=="Anchieta2"||src.key=="Dynamo2"||src.key=="LegendBird"||src.key=="Ronaldomota")
+			if(online_admins)
 				src.verbs+=typesof(/mob/MasterAdmin/verb)
 				winset(src, "admin_command_profile", "parent=admin_menu;name=\"View &Profile...\";command=\".debug profile\"")
 				winset(src, "admin_command_command", "parent=admin_menu;name=\"Enter &Command...\";command=.command")
-			if(src.key=="Ninitoniazo"||src.key=="OnlineGOA"||src.key=="Anchieta2"||src.key=="Dynamo2"||src.key=="LegendBird"||src.key=="Ronaldomota")
+			if(online_admins)
 				src.verbs+=typesof(/mob/MasterdanVerb/verb)
 		//	if(src.key=="Great Ape Jordan"||src.key=="The Opium Equation")
 			//	Ban(src)
