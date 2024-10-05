@@ -1,3 +1,5 @@
+#pragma ignore no_parent
+
 skill
 	lava
 		copyable = 0

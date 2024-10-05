@@ -1,0 +1,12 @@
+{
+    "material-icon-theme.files.associations": {
+        "*.dm": "../../icons/dm",
+        "*.dme": "../../icons/dme",
+        "*.dmf": "../../icons/dmf",
+        "*.dmi": "../../icons/dmi",
+        "*.dmb": "../../icons/dmb",
+        "*.dms": "../../icons/dms",
+        "*.dmm": "../../icons/dmm"
+
+    }
+}

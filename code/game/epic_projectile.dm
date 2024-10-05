@@ -1,3 +1,5 @@
+#pragma ignore no_parent
+
 /*
 M_Projectile system made by Masterdan (M get it?)
 	version: 1.0
@@ -101,13 +103,13 @@ Expand('icon.dmi')
 proc/M_Projectile_Coord(obj/projectile/O,mob/user,power,iterations,speed,tx,ty,list/Misc)
 	if(user)
 		user.get_specific_coords()
-		var/deg=arctan2(ty-user.p_y,tx-user.p_x)  //arctan2(dy,dx)
+		var/deg=Arctan(ty-user.p_y,tx-user.p_x)  //Arctan(dy,dx)
 		M_Projectile_Degree(O,user,power,iterations,speed,deg,Misc)
 proc/M_Projectile_Target(O,mob/user,power,iterations,speed,atom/target,list/Misc)
 	if(target && user)
 		target.get_specific_coords()
 		user.get_specific_coords()
-		var/deg=arctan2(target.p_y-user.p_y,target.p_x-user.p_x)  //arctan2(dy,dx)
+		var/deg=Arctan(target.p_y-user.p_y,target.p_x-user.p_x)  //Arctan(dy,dx)
 
 		M_Projectile_Degree(O,user,power,iterations,speed,deg,Misc)
 proc/M_Projectile_Degree(O,mob/user,power,iterations,speed,degree,list/Misc) //given a degree
@@ -157,7 +159,7 @@ proc/M_Projectile(atom/movable/O,mob/user,power,xmom,ymom,iterations,list/Misc) 
 		O.momy=ymom/2
 		O.momentum=iterations*2
 		var/speed = sqrt(O.momx*O.momx + O.momy*O.momy)
-		var/degre=arctan2(ymom,xmom)
+		var/degre=Arctan(ymom,xmom)
 		O.dir=angle2dir(degre)
 
 		for(var/obj/OG in O.Grabbed)
@@ -657,7 +659,7 @@ proc/Return_Coordinates(s)
 	var/l=findtext(s,",")
 	var/x=text2num(copytext(s,1,l))
 
-	var/y=text2num(copytext(s,l+1,lentext(s)+1))
+	var/y=text2num(copytext(s,l+1,length(s)+1))
 
 	var/Li[2]
 	Li[1]=x
@@ -691,7 +693,7 @@ proc/line2line_intersection(obj/projectile/A1,obj/projectile/A2)//A1 and A2 are 
 proc/angle(dx, dy)
     if(!dy)
         return dx?(dx>0?90:270):0
-    return arctan(dx/dy)
+    return Arctan(dx/dy)
 
 
 proc/physics_stationary(obj/projectile/A1,atom/A2)//A1 is moving, A2 is not.
@@ -855,14 +857,14 @@ atom/movable/proc/Expand(icon/e)  //turns a multi tile icon into one big image
 		OO.pixel_x=src.pixel_x
 
 
-proc/arctan(x)
+proc/Arctan(x)
 	var/y=arcsin(x/sqrt(1+x*x))
-	//if(usr) usr << "arctan([x]): y = [y]"
+	//if(usr) usr << "Arctan([x]): y = [y]"
 	if(x>=0) return y
 	return -y
 
-proc/arctan2(dy, dx)
-	//if(usr) usr << "arctan2([dy], [dx]):"
+proc/Arctan2(dy, dx)
+	//if(usr) usr << "Arctan([dy], [dx]):"
 	if(dy == 0)
 		if(dx > 0)
 			//if(usr) usr << "	return 0"
@@ -884,7 +886,7 @@ proc/arctan2(dy, dx)
 			//if(usr) usr << "	return -90"
 			return -90
 	else
-		var/angle = arctan(dy/dx)
+		var/angle = Arctan(dy/dx)
 		if(dx < 0)
 			angle = 180 - angle
 		if(dy < 0)
@@ -896,7 +898,7 @@ proc/get_real_angle(atom/A, atom/B)
 	var/dx = B.x - A.x
 	var/dy = B.y - A.y
 	//if(usr) usr << "get_real_angle([A], [B]): dx=[dx], dy=[dy]"
-	return arctan2(dy, dx)
+	return Arctan(dy, dx)
 
 proc
 	dir2ref(d)

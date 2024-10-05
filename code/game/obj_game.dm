@@ -1,3 +1,5 @@
+#pragma ignore no_parent
+
 obj
 	caltrops
 		icon='icons/caltrop.dmi'
