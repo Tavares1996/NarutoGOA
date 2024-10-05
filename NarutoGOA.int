@@ -1,26 +1,26 @@
 // BEGIN_INTERNALS
 /*
 MAP_PLANE_MASTERS: 
-MAP_ZOOM: 1.000
 PACKAGE_DMB_HUB: Goku100000000.NarutoGoa2
-LAST_COMPILE_TIME: 1728156527
-PACKAGE_RSC_NAME: D:\Downloads\´Pasta Pedro\~Byond\NarutoGoa-NewVersion\NarutoGOA_rsc.zip
+MAP_ZOOM: 1.000
+LAST_COMPILE_TIME: 1728156802
 DIR: code code\_libs\ListSort code\_libs\pif_MapLoader code\_shared code\game code\game\Backup code\game\skills code\mapmaker old_map old_map\Extras 
+PACKAGE_RSC_NAME: D:\Downloads\´Pasta Pedro\~Byond\NarutoGoa-NewVersion\NarutoGOA_rsc.zip
 AUTO_FILE_DIR: ON
-PACKAGE_DME_CLEANCHECK: OFF
-PACKAGE_DMB_CLEANCHECK: OFF
 PACKAGE_DMB_INFO: 
+PACKAGE_DMB_CLEANCHECK: OFF
+PACKAGE_DME_CLEANCHECK: OFF
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: D:\Downloads\´Pasta Pedro\~Byond\NarutoGoa-NewVersion\NarutoGOA_src.zip
 LAST_COMPILE_VERSION: 515.1643
-PACKAGE_TYPE: 1
 PACKAGE_DME_START: 
-PACKAGE_RSC_CLEANCHECK: OFF
+PACKAGE_TYPE: 1
+WINDOW: old_map\0_newmap(1-6).dmm;old_map\interriors(7-11).dmm;old_map\map_cha(12-20).dmm;old_map\map_kawa(21-29).dmm;code\game\skills\Snake.dm;old_map\map_kiri(30-38).dmm;old_map\map_konoha(39-48).dmm;old_map\map_suna(49-57).dmm;code\game\skills\Paper.dm
 PACKAGE_DME_INFO: 
-WINDOW: old_map\0_newmap(1-6).dmm;old_map\interriors(7-11).dmm;old_map\map_cha(12-20).dmm;old_map\map_kawa(21-29).dmm;code\game\skills\Snake.dm;old_map\map_kiri(30-38).dmm;old_map\map_konoha(39-48).dmm;old_map\map_suna(49-57).dmm
-FILE: old_map\map_suna(49-57).dmm
+PACKAGE_RSC_CLEANCHECK: OFF
+FILE: old_map\interriors(7-11).dmm
 MAP_INSTANCE_MODE: copy
-PACKAGE_DME_DEMO: 
 PACKAGE_DMB_NAME: C:\Documents and Settings\Pedro Luis\Ambiente de trabalho\NSR.zip
+PACKAGE_DME_DEMO: 
 */
 // END_INTERNALS
