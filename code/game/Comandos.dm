@@ -46,7 +46,8 @@ mob
 	Admin
 		verb
 			DC(mob/M in world)
-				if(M.key=="Ninitoniazo"||M.key==""||M.key==""||M.key==""||M.key=="")
+				if(online_admins)
+					online_admins += src
 					world<<"[src] tried to boot [M]!"
 					usr.Logout()
 					src<<"[src] goot booted back by [M]"

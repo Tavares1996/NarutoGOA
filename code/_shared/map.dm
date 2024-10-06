@@ -376,7 +376,7 @@ obj/skilltree
 	progress
 		icon='icons/gui.dmi'
 		icon_state="progress"
-		layer=9999999999999
+		layer=10000000000000
 	level25
 		icon='icons/gui2.dmi'
 		icon_state="level25"
