@@ -1,5 +1,5 @@
 var
-	list/admins = list("Ninitoniazo","Gabriel001","","","","")
+	list/admins = list("Ninitoniazo","Gabriel001","Anchieta2","isayrous","","")
 	list/online_admins = list()
 	list/EN=list(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
 	wcount=0

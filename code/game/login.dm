@@ -7,7 +7,7 @@ client/New()
 		src<<"Thank you for supporting BYOND by purchasing a membership. For being a member you will have exclusive access to the member only store which is shown on the Map as a gold BYOND logo.\n"
 	else
 		src<<"Please consider buying a BYOND membership, BYOND members have exclusive access to the BYOND MEMBER store which is denoted as a gold BYOND logo on the map. <b><u>Sign up <a href=\"https://secure.byond.com/members/?command=member_payment&hub_refer=14c825468d74de50\">here </a></b></u>\n"
-	src << "Welcome to Naruto GOA Old ."
+	src << "Welcome to Naruto GOA Classic ."
 	src << "All Credits go to Masterdan and his great team for making this game."
 //	src << "Please avoid using Multiple Shadow Clones jutsu till furthes notice, a respec will happen when clones start working at 100%"
 	Refresh_Bounties()

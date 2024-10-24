@@ -11,12 +11,12 @@ world
 	mob=/mob/charactermenu
 	view=8
 	turf=/turf/denseempty
-	name = "Naruto GOA Old"
+	name = "Naruto GOA Classic"
 	status = "{Public Server}"
-	hub =  "OnlineGOA.NarutoGOAOld"
-	hub_password=  "1234"
+	hub =  "Gabriel001.GOAOriginal"
+	hub_password=  "w5XatgwuhOCbMAOv"
 	tick_lag = 1
-	loop_checks = 1
+	loop_checks = 0
 
 #if DM_VERSION >= 455
 	//map_format = TOPDOWN_MAP
