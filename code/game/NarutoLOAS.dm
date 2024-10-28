@@ -1,8 +1,42 @@
 var
-	list/admins = list("Ninitoniazo","Gabriel001","Anchieta2","isayrous","","")
+//	list/admins = list("Ninitoniazo","Gabriel001","Anchieta2","Isayrous","","")
+	list/admins = list()
 	list/online_admins = list()
 	list/EN=list(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
 	wcount=0
+
+/////////////////////
+
+// Proc para carregar os administradores do arquivo
+proc/load_admins_from_file()
+    var/list/new_admins = file2list("admins.txt") // Carrega a lista do arquivo
+    if (new_admins)
+        admins = new_admins // Atualiza a lista de administradores
+
+// Proc para ler um arquivo e retornar uma lista
+proc/file2list(file_name)
+    var/list/result = list() // Inicializa a lista de resultados
+    var/text = file2text(file_name) // Lê o conteúdo do arquivo
+
+    // Verifica se o arquivo foi lido com sucesso
+    if (text)
+        for (var/line in text2list(text, "\n")) // Quebra o texto em linhas
+            result += line // Adiciona cada linha à lista de resultados
+
+    return result // Retorna a lista
+
+// Função para atualizar a lista de administradores a cada minuto
+proc/start_admin_loader()
+    world << "Carregando lista de administradores a cada minuto."
+    while (TRUE)
+        load_admins_from_file() // Chama a função para carregar os administradores
+        sleep(600) // Espera 600 ticks (1 minuto)
+
+// Inicia o carregamento quando o mundo começar
+mob/Login()
+    start_admin_loader() // Começa a atualizar a lista de administradores
+
+////////////////////
 
 var
 	list
